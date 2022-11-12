@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>soal 5</title>
+    </head>
+    <body>
+        <div id="info"></div>
+        <label for="hewan">Pilih Hewan</label>
+        <select name="hewan" id="hewan">
+            <option>Burung Cendrawasih</option>
+            <option>Hariamau</option>
+            <option>Kuda Laut</option>
+            <option>Kupu-kupu</option>
+            <option>Merak</option>
+        </select>
+
+        <script>
+            const hewan = document.getElementById('hewan');
+            const info = document.getElementById('info');
+
+            hewan.addEventListener('change', function()) {
+                info.innerHTML = 'Anda memilih: ${e.target.value}';
+            }
+        </script>
+    </body>

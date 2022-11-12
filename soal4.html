@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>soal 4</title>
+    </head>
+    <body>
+        <script>
+            function hotel (namahotel, alamat, jmlkamar, fasilitas, klasifikasi){
+                this.namahotel = namahotel; this.alamat = alamat; this.jmlkamar = jmlkamar; this.fasilitas=fasilitas; this.klasifikasi=klasifikasi;
+                this.deskripsi = function(name){
+                    console.info("Hai ${name}, Nama Hotel :  ${this.namahotel} dengan alamat : ${this.alamat} , jumlah kamar "" ${this.jmlkamar});
+                }
+            }
+            const a = new hotel("sejahtera", "praya", "2", "lengkap", "lainnnya");
+            a.deskripsi("Laili Septia");
+        </script>
+    </body>
+</html>
